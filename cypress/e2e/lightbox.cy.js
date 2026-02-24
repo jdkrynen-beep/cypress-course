@@ -48,7 +48,7 @@ context('Lightbox - Tests Fonctionnels', () => {
         cy.dataCY('likes-count').should('contain', '1')
 
         closeLightboxByOverlayClick()
-        showOverlay()
+        showOverlay() 
 
         cy.dataCY('overlay').within(() => {
             cy.contains('1').should('be.visible')
